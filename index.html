@@ -1,165 +1,108 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <div class="form-container">
+```
+<div class="form-container">
+    <h1>Get in touch</h1>
+    <p class="subtitle">Fill out the form below and we'll get back to you.</p>
 
-        <h1>Get in touch</h1>
-        <p class="subtitle">Fill out the form below and we'll get back to you.</p>
-
-        <form>
-
-            <div class="row">
-
-                <div class="form-group">
-                    <label for="first-name">First name</label>
-                    <input
-                        type="text"
-                        id="first-name"
-                        name="first-name"
-                        placeholder="Aldrin"
-                    >
-                </div>
-
-                <div class="form-group">
-                    <label for="last-name">Last name</label>
-                    <input
-                        type="text"
-                        id="last-name"
-                        name="last-name"
-                        placeholder="Jake"
-                    >
-                </div>
-
+    <form>
+        <div class="row">
+            <div class="form-group">
+                <label for="first-name">First name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Aldrin">
             </div>
 
             <div class="form-group">
-                <label for="email">Email</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="aldrinjake06@example.com"
-                >
+                <label for="last-name">Last name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Jake">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="aldrinjake06@example.com">
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="+63 910 6081 373">
+        </div>
+
+        <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" placeholder="SBS Inc.">
+        </div>
+
+        <div class="form-group">
+            <label for="website">Website</label>
+            <input type="url" id="website" name="website" placeholder="https://SBSIcheon.com">
+        </div>
+
+        <div class="row">
+            <div class="form-group">
+                <label for="dob">Date of birth</label>
+                <input type="date" id="dob" name="dob">
             </div>
 
             <div class="form-group">
-                <label for="phone">Phone</label>
-                <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    placeholder="+63 910 6081 373"
-                >
+                <label for="budget">Budget</label>
+                <input type="number" id="budget" name="budget" placeholder="-1">
             </div>
+        </div>
 
-            <div class="form-group">
-                <label for="company">Company</label>
-                <input
-                    type="text"
-                    id="company"
-                    name="company"
-                    placeholder="SBS Inc."
-                >
-            </div>
+        <div class="form-group">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="">Select a country</option>
+                <option value="philippines">Philippines</option>
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="australia">Australia</option>
+                <option value="japan">Japan</option>
+                <option value="china">China</option>
+                <option value="forgottenisland">Nakali</option>
+                <option value="otheroptions">Others</option>
+            </select>
+        </div>
 
-            <div class="form-group">
-                <label for="website">Website</label>
-                <input
-                    type="url"
-                    id="website"
-                    name="website"
-                    placeholder="https://SBSIcheon.com"
-                >
-            </div>
+        <div class="form-group">
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic">
+                <option value="">Choose a topic</option>
+                <option value="general">General inquiry</option>
+                <option value="support">Support</option>
+                <option value="sales">Sales</option>
+                <option value="feedback">Feedback</option>
+                <option value="marketing">Marketing</option>
+            </select>
+        </div>
 
-            <div class="row"> 
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us your thoughts..."></textarea>
+        </div>
 
-                <div class="form-group">
-                    <label for="dob">Date of birth</label>
-                    <input
-                        type="date"
-                        id="dob"
-                        name="dob"
-                    >
-                </div>
+        <div class="terms">
+            <input type="checkbox" id="terms" name="terms">
+            <label for="terms">
+                I agree to the terms and conditions....
+            </label>
+        </div>
 
-                <div class="form-group">
-                    <label for="budget">Budget</label>
-                    <input
-                        type="number"
-                        id="budget"
-                        name="budget"
-                        placeholder="-1"
-                    >
-                </div>
-
-            </div>
-
-            <div class="form-group">
-                <label for="country">Countdry</label>
-
-                <select id="country" name="country">
-                    <option value="">Select a country</option>
-                    <option value="philippines">Philippines</option>
-                    <option value="usa">United States</option>
-                    <option value="canada">Canada</option>
-                    <option value="uk">United Kingdom</option>
-                    <option value="australia">Australia</option>
-                    <option value="japan">Japan</option>
-                    <option value="china">China</option>
-                    <option value="forgottenisland">Nakali</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="topic">Topic</label>
-
-                <select id="topic" name="topic">
-                    <option value="">Choose a topic</option>
-                    <option value="general">General inquiry</option>
-                    <option value="support">Support</option>
-                    <option value="sales">Sales</option>
-                    <option value="feedback">Feedback</option>
-                    <option value="emotionalsupport">Emotional Support</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="message">Message</label>
-
-                <textarea
-                    id="message"
-                    name="message"
-                    placeholder="Tell us your thoughts..."
-                ></textarea>
-            </div>
-
-            <div class="terms">
-                <input
-                    type="checkbox"
-                    id="terms"
-                    name="terms"
-                >
-
-                <label for="terms">
-                    I agree to the terms and conditions....
-                </label>
-            </div>
-
-            <button type="submit">Submit</button>
-
-        </form>
-
-    </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+```
 
 </body>
 </html>
